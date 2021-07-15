@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Stream or Static Feed</title>
+	
+	<style>
+		.container {
+			position:relative;
+		}
+
+		.footer {
+			position:absolute;
+			bottom: 10px;
+			text-align:center;
+			width: 100%;
+		}			
+		
+		.btn {
+			width:40% !important;
+			margin-right: 30% !important;
+			margin-left: 30% !important;
+		}
+		
+		.btn:hover{
+			background-color: #008CBA; 
+			color: white;
+		}		
+	</style>
+	
+</head>
+<body>
+    <div class="container">
+         <!-- <img src="../static/cnt.jpg" alt="CNT4713" class="logo"> -->
+        <h3> CNT4713 Stream Project Summer 2021</h3>
+		<p style="text-align:center"> Select the type of Video Stream you want to view <p>
+        <div class="form-input">
+            <form action="/static" method="POST">
+                <button class="btn" name="static" type="submit">Static Video Stream</button>
+            </form>
+            <form action="/stream" method="POST">
+                <button class="btn" name="stream" type="submit">Live Video Stream</button>
+            </form>
+        </div>
+    </div>
+	<div class = "footer col-lg-4 col-lg-offset-4">
+	    <p> This code was outsourced from Danny Barlos. Check out the rest of his programming work at <a href="https://github.com/dannybarlos">https://github.com/dannybarlos </a> <p> 
+	</div>
+</body>
+</html>
